@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ember &amp; Oak - wood-fired kitchen serving seasonal dishes. Reserve your table online.">
+  <title>Ember &amp; Oak | Wood-Fired Kitchen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="logo">Ember <span>&amp;</span> Oak</a>
+
+      <!-- CSS-only hamburger: checkbox + label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reserve" class="nav-cta">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-content fade-in">
+        <p class="eyebrow">Wood-fired kitchen &middot; Est. 2015</p>
+        <h1>Fire, Flavour &amp; Good Company</h1>
+        <p class="hero-sub">Seasonal ingredients, cooked over open flame, served the way food should be: slowly and with love.</p>
+        <a href="#reserve" class="btn">Book a Table</a>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-sub">A few favourites from our kitchen.</p>
+
+        <div class="menu-grid">
+          <article class="card">
+            <img src="images/dish-1.svg" alt="Stack of fluffy pancakes" loading="lazy">
+            <div class="card-body">
+              <div class="card-head"><h3>Honey Pancakes</h3><span class="price">$9</span></div>
+              <p>Buttermilk pancakes with wild honey, berries and whipped cream.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/dish-2.svg" alt="Fresh garden salad" loading="lazy">
+            <div class="card-body">
+              <div class="card-head"><h3>Garden Salad</h3><span class="price">$11</span></div>
+              <p>Crisp greens, shaved fennel, toasted seeds and lemon vinaigrette.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/dish-3.svg" alt="Plate of tomato pasta" loading="lazy">
+            <div class="card-body">
+              <div class="card-head"><h3>Smoked Tomato Pasta</h3><span class="price">$15</span></div>
+              <p>Hand-cut pasta in a fire-roasted tomato and basil sauce.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/dish-4.svg" alt="Grilled ribeye steak" loading="lazy">
+            <div class="card-body">
+              <div class="card-head"><h3>Oak-Grilled Ribeye</h3><span class="price">$32</span></div>
+              <p>12oz ribeye, charred over oak with garlic butter and greens.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/dish-5.svg" alt="Wood-fired pizza" loading="lazy">
+            <div class="card-body">
+              <div class="card-head"><h3>Ember Pizza</h3><span class="price">$17</span></div>
+              <p>Sourdough crust, mozzarella, chilli oil and fresh basil.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/dish-6.svg" alt="Slice of berry cake" loading="lazy">
+            <div class="card-body">
+              <div class="card-head"><h3>Berry Cream Cake</h3><span class="price">$8</span></div>
+              <p>Light sponge layered with mascarpone cream and seasonal berries.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <img src="images/about.svg" alt="Our head chef preparing food in the kitchen" loading="lazy">
+        <div>
+          <h2 class="section-title left">Our Story</h2>
+          <p>Ember &amp; Oak started as a small neighbourhood kitchen with one oven and a big idea: cook honestly, use what is in season, and let the fire do the talking.</p>
+          <p>Today we work with local farms and bakers, and every dish still starts the same way, with good ingredients and a hot oak fire.</p>
+          <ul class="stats">
+            <li><strong>10+</strong> years</li>
+            <li><strong>20</strong> local suppliers</li>
+            <li><strong>1</strong> big fire</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-sub">A taste of the atmosphere.</p>
+        <div class="gallery-grid">
+          <figure><img src="images/gallery-1.svg" alt="Glass of red wine" loading="lazy"></figure>
+          <figure><img src="images/gallery-2.svg" alt="Open wood fire in the oven" loading="lazy"></figure>
+          <figure><img src="images/gallery-3.svg" alt="Freshly baked bread" loading="lazy"></figure>
+          <figure><img src="images/gallery-4.svg" alt="Ripe tomatoes from a local farm" loading="lazy"></figure>
+          <figure><img src="images/gallery-5.svg" alt="Cup of coffee" loading="lazy"></figure>
+          <figure><img src="images/gallery-6.svg" alt="Fresh herbs" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section section-alt">
+      <div class="container narrow">
+        <h2 class="section-title">Reserve a Table</h2>
+        <p class="section-sub">We'll confirm your booking by email.</p>
+
+        <form class="form" action="#" method="get">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" min="12:00" max="22:00" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="guests">Number of guests</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Choose...</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7+</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="notes">Notes <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-block">Request Reservation</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Ember <span>&amp;</span> Oak</h3>
+        <p>12 Orchard Lane<br>Springfield</p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Tue&ndash;Fri: 12pm &ndash; 10pm<br>Sat&ndash;Sun: 10am &ndash; 11pm<br>Mon: Closed</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+15550123456">(555) 012-3456</a><br><a href="mailto:hello@emberandoak.example">hello@emberandoak.example</a></p>
+        <p class="social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="X">X</a>
+        </p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Ember &amp; Oak. A fictional restaurant for a training assignment.</p>
+  </footer>
+
+</body>
+</html>
